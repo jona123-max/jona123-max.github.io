@@ -1,0 +1,124 @@
+/* General */
+
+body {
+  background-color: #121212;
+  background-image: url('https://thumbs.dreamstime.com/z/fondo-de-escritorio-inteligencia-artificial-color-azul-oscuro-296800541.jpg?ct=jpeg'); /* Pon aquí tu imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #f5f5f5;
+  padding-top: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+/* Capa oscura para que la imagen no opaque el texto */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(18, 18, 18, 0.75); /* negro con 75% opacidad */
+  z-index: -1; /* detrás del contenido */
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+p, li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+section.container {
+    max-width: 900px;
+}
+
+/* Botones */
+
+.btn-outline-primary:hover,
+.btn-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+/* Navbar */
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Carousel caption (para index.html si lo usas) */
+
+.carousel-caption h5,
+.carousel-caption p {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Imágenes en sección principal */
+
+section.position-relative img {
+    filter: brightness(70%);
+}
+
+section.position-relative .text-white {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+
+footer {
+    font-size: 0.95rem;
+}
+
+/* Accordion (para aplicaciones.html) */
+
+.accordion-button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #f5f5f5;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0d6efd;
+    background-color: #e9f2ff;
+}
+
+.accordion-body img {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Animaciones generales */
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* ——— TEXTO OSCURO DENTRO DE FONDOS BLANCOS ——— */
+
+.bg-white,
+.bg-white * {
+  color: #222 !important;
+}
+
+/* ——— MEJORA ESTÉTICA PARA CUADROS BLANCOS ——— */
+
+.bg-white {
+  background-color: #ffffffcc; /* Blanco con transparencia suave */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra difusa */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 2rem !important; /* Espacio interno */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+.bg-white:hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
+}
